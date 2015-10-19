@@ -1,0 +1,19 @@
+#navbar{
+    text-align:center;
+    border:20px solid rgb(0,204,204);
+    background-color:rgb(255,0,127);
+}
+#navbar li{
+    display:inline-block;
+    border:5px solid rgb(204,0,0) ;
+    margin:10px;
+  padding:10px;
+}
+
+#navbar a{
+    font-family:serif, sans-serif;
+    font-size:25px;
+    font-weight:bolder;
+    font-style:italic;
+    
+}
