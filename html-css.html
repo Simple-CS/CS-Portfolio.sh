@@ -25,7 +25,13 @@
  #heading-13{
       text-align:center;
   }
- 
+  #footer-css{
+   font-size:80%;
+   color:rgb(154,56,0);
+  }
+ table, tr, th{ border:5px solid rgb(0,0,102);
+                border-collapse:collapse;
+}
 
     </style>
     <head>
@@ -57,15 +63,40 @@
         that last sentence in order to italicize the word "tag". Tags have
         the ability to dictate where headings, paragraphs, footers, lists, images, 
         and links shall be placed, as well as emphasize and embolden certain words,
-        among other purposes. HTML was created by physicist Tim Berners-Lee
-        in the early 1990s as an application for CERN, and was released to the public 
-        in 1993, although it is currently on its fifth installment, HTML 5. It was 
-        created by Berners-Lee, along with URLs and HTTP, in order to create the backbone 
-        of the World Wide Web. HTML is written in elements, which consists of many tags to 
-        specify different actions. HTML is essential to the internet, because of its use as 
-        the basis for many of the webpages we know today. Without HTML, we may not have many 
-        websites we use today. </p></div>
-        
+        among other purposes. Tags are not ever seen by the user, but rahter they 
+        tell the browser how to show information on a webpage. HTML was created by
+        physicist Tim Berners-Lee in the early 1990s as an application for CERN,
+        and was released to the public in 1993, although it is currently on its 
+        fifth installment, HTML 5. It was created by Berners-Lee, along with URLs 
+        and HTTP, in order to create the backbone of the World Wide Web. HTML is 
+        written in elements, which consists of many tags to specify different actions. 
+        HTML is essential to the internet, because of its use as the basis for many 
+        of the webpages we know today. Without HTML, we may not have many websites we 
+        use today. </p></div>
+     <table border="2">
+      <thead>
+       <tr>
+        <th>HTML Tag</th>
+        <th>Purpose</th>
+       </tr>
+      </thead>
+      <tr>
+       <th>"p"</th>
+       <th>Used to create orderly paragraphs of text.</th>
+      </tr>
+      <tr>
+       <th>"h1-h6"</th>
+       <th>Used to create headings, of all different sizes.</th>
+      </tr>
+      <tr>
+       <th>"footer"</th>
+       <th>Used to create a footer that individualizes your page and may tell people where to get further information</th>
+      </tr>
+      <tr>
+       <th>"table, thead, tr, th"</th>
+       <th>Used in order to create tables like this, for easy organization of information.</th>
+      </tr>
+     </table>
         <div id="heading-13"><h1>CSS</h1></div>
        <div id="paragraph-css"> <p>Cascading Style Sheets, more widely known as CSS, is a style language that is used
         to tell a browser how to present a document written in a markup language such as HTML. 
@@ -75,14 +106,21 @@
         of a document, the positioning of text and images within a webpage, as well as the borders around 
         bodies of text and images, among other purposes. CSS is not used as a singular language, but rather
         in conjunction with a language like HTML. </p>
-            
+            <img src="http://i.imgur.com/OXOa9DR.jpg" "Example of CSS styling">
+            <footer id="footer-css">An example of some CSS styling used to change <br> some visual elements of this webpage.</footer>
+      
         <p>CSS is written using a mixutre of ids (which are identified with a # mark preceeding the id name. For example, "#footer-1"),
-        classes( identified with ".", for example:".heading"), and HTML tags (like "p" or "h1"). Although the idea of style sheets has 
+        classes ( identified with ".", for example:".heading"), and HTML tags (like "p" or "h1"). Although the idea of style sheets has 
         been around since the 1980s, in the form of Standard Generalized Markup Language (SGML), CSS was developed as in order to allow 
-        people the use of more style sheets. Similarily to HTML, CSS was developed by a worker for CERN, Håkon Wium Lie, and the first 
+        people the use of more style sheets. Similarily to HTML, CSS was developed by a worker for CERN, Hakon Wium Lie, and the first 
         proposal was given to CERN in 1994. To this day, Lie still works on the advancemnet of CSS use and accessibility, as well as 
-        being the Chief Technology Officer of software company "Opera". 
-            
+        being the Chief Technology Officer of software company "Opera". As for the writing of CSS, some of the most improtant keys that 
+        are used are squiggly brackets ("{}"), colons(":"), and semi-colons(";"), as well as elements like color, height, and border, 
+        among others. The "{}" are used to dictate where the style changes for a section begin and end. For example, if I wanted to only
+        change something for the heading of a page, I would write "head {(some element written in here)}". This would tell a browser that 
+        for the section listed before the brackets, the only att to be changed are those stated <strong>within</strong> the brakcets. 
+        Nothing written in this is shown to the viewer of the webpage, but rather the browser translates the attributes to create a visual 
+        change that the viewer <strong>does</strong> see. 
             
         </p></div>
         

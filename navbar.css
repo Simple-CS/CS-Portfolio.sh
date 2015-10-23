@@ -1,6 +1,6 @@
 #navbar{
     text-align:center;
-    border:20px solid rgb(0,204,204);
+    border:20px groove rgb(0,204,204);
     background-color:rgb(255,0,127);
 }
 #navbar li{
@@ -15,5 +15,6 @@
     font-size:25px;
     font-weight:bolder;
     font-style:italic;
+    color:rgb(51,0,102);
     
 }
