@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <style>
+       #body{background-image: urL("http://previews.123rf.com/images/pdreams/pdreams1210/pdreams121000004/15953097-mathematic-school-design-background-illustration-Stock-Illustration-math-background-mathematics.jpg") ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+       } 
+       #dropdown{
+           color:rgb(128,0,128);
+           font-size:20px;
+       }
+       #input1{
+           color:red;
+           text-align:left;
+           height:40px;
+           font-size:20px;
+       }
+       #input2{
+           color:blue;
+           text-align:right;
+           height:40px;
+           font-size:20px;
+       }
+       #answer{
+           font-size:50px;
+           color:rgb(0,0,128);
+           text-align:center;
+           margin-left:60px;
+       }
+       #submitButton{
+           font-size:20px;
+           margin-top:15px;
+       }
+   #boxes{
+       text-align:center;
+       margin-left:75px;
+   }
+     .footer-6-1{
+      color:rgb(102,92,92);
+  }
+  .footer-6-3{
+       color:rgb(102,92,92);
+       margin-left:45%;
+  }
+  
+    </style>
+    
+<head>
+	<link rel="stylesheet" type="text/css" href="Calc.css">
+	<title>Document</title>
+</head>
+<body id="body">
+ <div id="boxes">  
+<input type ="text" name="input1" style="width:125px;" id="input1">
+    <select id="dropdown">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="x">x</option>
+        <option value="/">/</option>
+         <option value="^">^</option>
+            <option value="sqrt">sqrt</option>
+        <option value="cbrt">cbrt</option>
+    </select>
+    <input type ="text" name="input2" style="width:125px;" id="input2">
+    <br><input type="button" value="Calculate" id="submitButton" /></div>
+
+    <p id="answer">Die Antwort ist: <span id="display"></span></p>
+<script src="calc.js" ></script>
+ </body>
+</html>
