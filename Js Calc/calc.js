@@ -46,4 +46,14 @@ function doMath() {
         answer = Math.cbrt (parseInt(input2.value));
         display.innerHTML = answer; 
     }
+    //Done to find the third root of a given value
+    
+    if (input1.value >= 1000000000000){
+        display.innerHTML = "Input 1 too large";
+        
+}
+//used to restrict the size of values that may be computed; not neceessary, just to test out if statements. 
+    if (input2.value >= 420000000){
+        display.innerHTML = "Input 2 too large"
+    }
 }// JavaScript File 
