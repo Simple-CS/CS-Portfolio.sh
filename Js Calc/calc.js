@@ -56,5 +56,8 @@ function doMath() {
     if (input2.value >= 420000000000){
         display.innerHTML = "Input 2 too large"
     }
-//used to restrict the size of values that may be comouted; not necessary, just to test out if statements. 
+    //used to restrict the size of values that may be comouted; not necessary, just to test out if statements. 
+    if(answer>=400000000000000){
+        display.innerHTML = "Calculation too large";
+    }
 }// JavaScript File 
