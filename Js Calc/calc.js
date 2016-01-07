@@ -30,12 +30,22 @@ function doMath() {
         display.innerHTML = answer; 
     }
     //Done in order to divide two numbers. 
+    if(dropdown.value == "^2"){
+        answer = Math.pow(parseInt(input1.value),2);
+        display.innerHTML = answer; 
+    }
+    //Done to find the value when an integer is squared. 
+    if(dropdown.value == "^3"){
+        answer = Math.pow(parseInt(input1.value),3);
+        display.innerHTML = answer; 
+    }
+    //Done to find the value when an integer is cubed. 
     if  (dropdown.value == "^"){
         answer = Math.pow(parseInt(input1.value),parseInt(input2.value));
         display.innerHTML = answer; 
     }
     //Done to find the value when an integer is raised to the nth power
-    
+  
     if(dropdown.value == "sqrt"){
         answer = Math.sqrt (parseInt(input2.value));
      display.innerHTML = answer;    
@@ -47,14 +57,14 @@ function doMath() {
         display.innerHTML = answer; 
     }
     //Done to find the third root of a given value
-    4
+    
     if (input1.value >= 1000000000000){
         display.innerHTML = "Input 1 too large";
         
 }
 //used to restrict the size of values that may be computed; not neceessary, just to test out if statements. 
     if (input2.value >= 420000000000){
-        display.innerHTML = "Input 2 too large"
+        display.innerHTML = "Input 2 too large";
     }
     //used to restrict the size of values that may be comouted; not necessary, just to test out if statements. 
     if(answer>=400000000000000){
