@@ -9,7 +9,6 @@ var info4 = document.getElementById("info4");
 var info5 = document.getElementById("info5");
 var info6 = document.getElementById("info6");
 var info7 = document.getElementById("info7");
-var info8 = document.getElementById("info8");
 item1.addEventListener("click", function(){
     info1.innerHTML = "The DaVinci Code, written by author Dan Brown, is about art historian and symbologist <br> Robert Langdon and cryptologist Sophie Neveu investigating a murder at the Lourve in Paris,France. <br>Langdon and Neveu spend the book connecting the murder to various groups that have little known <br>about them but a large connection to history. The murder leads Langdon and Neveu down many paths, <br>with danger lurking around every corner, since their dealings left them in contact with shady <br> organizations that little is known about.  ";
     info2.innerHTML = "<br>This book is in fact one of my favourite of all time because of the mystery and intrigue of the story. At no <br> point when reading this book did I feel compelled to put it down due to immense boredom.<br> Dan Brown has remained one of my all-time favourite authors with his release of 'Inferno' <br>in May of 2013.";
@@ -26,5 +25,5 @@ item3.addEventListener("click",function(){
 item4.addEventListener("click",function(){
     info7.innerHTML = "Finally, I have the fourth and conclusive book to present to you all today,and that is <br> 'Gone Girl' written by Gillian Flynn. This story, about a missing woman and the adventure <br> (if I can even call it an adventure) to find her is heart-pounding, mysterious, and absolutely exquisite.<br> There are many twists and turns throughout this 420 page book, making it so you never know <br> what to expect on the next page.  ";
     
-})
+});
 // JavaScript File
