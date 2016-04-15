@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html>
    <style>
-       
-       
-       
-       
-       
+       body{
+           background-color:red;
+           color:white;
+       }
+     #vind2{
+         float:right;
+        
+     }
+   #general{
+       margin-top:90px;
+   }
+    .head-text{
+        color:rgb(65,105,225);
+    }
+       #navbar a{
+    font-family:serif, sans-serif;
+    font-size:25px;
+    font-weight:bolder;
+    font-style:italic;
+    color:rgb(51,0,102);
+    
+}
+     
+    #navbar{
+    text-align:center;
+    border:20px groove rgb(255,215,0);
+    background-color:rgb(220,20,60);
+}
+#navbar li{
+    display:inline-block;
+    border:8px solid black ;
+    margin:10px;
+  padding:10px;
+}
+   #heading-number-1-c{
+       text-align:center;
+   }
    </style>
    
    
@@ -16,25 +48,34 @@
     <body>
 
 
+ <h1 id="heading-number-1-c">=+=Vindinium=+=</h1>
+         <ul id="navbar">
+            <li><a href="index.html "></index>Home</a></li>
+            <li><a href="html-css.html">HTML/CSS</a></li>
+            <li><a href="JSCalc.html">Calculator</a></li>
+            <li><a href="Books.html">Books</a></li>
+            <li><a href="week 4.html">Randomiser</a></li>
+           <li><a href="NeededForGrade.html"> Vindinium</a> </li>
+           <li><a href="Skins.html"> Counter Strike</a></li>
+        </ul>
 <h1>What is Vindinium?</h1>
+<p id="vind1">Vindinium is a turn based online multiplayer game in which four competitors battle to acquire the most land, in the form of mines, <br> and by
+doing so, get the most gold. Each player has one person, a hero, who they may move around the map. Players must move<br> around to the various
+gold mines placed around the map, and try and take them over. These mines are protected by goblins, and once<br> the goblin is defeated, the 
+mine is acquired. When a mine is owned, the owner receives one gold per round from each mine that they hold. <br> <br> Additionally, players 
+have the ability to fight against one another, once a single turn is finished. If one hero kills another, and the player who was<br> killed had 
+control of a number of mines, then the killer takes over the previously owned mines. Furthermore, if a player wants to regain health<br> which 
+may have been lost during battle, they may pay a visit to the tavern. At the tavern, they will be able to buy a drink for the cost of 2 gold.<br> 
+The drink will restore 50 health, at most, although they can purchase several drinks at a time. The player who was killed will return to their<br>
+spawn point to respawn immediately the game ceases after 1200 total turns, and the winneris decided based upon the final amount of gold that<br>
+players have.</p>
 
-<p>Vindinium is a turn based online multiplayer game in which four competitors battle to acquire the most land, in the form of mines, and by
-doing so, get the most gold. Each player has one person, a hero, who they may move around the map. Players must move around to the various
-gold mines placed around the map, and try and take them over. These mines are protected by goblins, and once the goblin is defeated, the 
-mine is acquired. When a mine is owned, the owner receives one gold per round from each mine that they hold. <br> Additionally, players 
-have the ability to fight against one another, once a single turn is finished. If one hero kills another, and the player who was killed had 
-control of a number of mines, then the killer takes over the previously owned mines. Furthermore, if a player wants to regain health which 
-may have been lost during battle, they may pay a visit to the tavern. At the tavern, they will be able to buy a drink for the cost of 2 gold. 
-The drink will restore 50 health, at most, although they can purchase several drinks at a time. The player who was killed will return to their
-spawn point to respawn immediately the game ceases after 1200 total turns, and the winneris decided based upon the final amount of gold that 
-players have. </p>
+<div id="vind2"><p> A main goal of the creators of Vindinium was to have people develop unique bots to fight agianst one another. They did this by giving people
+certain<br> specifications and guidlines that they needed to follow, and allowing them to design their own bots to fight with. This aspect creates 
+really fierce competition.<br> Along with the elo system that works to rank players, Vindinium is a game which induces creativity and a competitive 
+nature. </p></div>
 
-<p> A main goal of the creators of Vindinium was to have people develop unique bots to fight agianst one another. They did this by giving people
-certain specifications and guidlines that they needed to follow, and allowing them to design their own bots to fight with. This aspect creates 
-really fierce competition. Along with the elo system that works to rank players, Vindinium is a game which induces creativity and a competitive 
-nature. </p>
-
-
+<div id="general"><h1 class="head-text"> GENERAL CODE</h1>
 <div id="LargeCode"><pre><code> 
 var Bot = require('bot');
 var PF = require('pathfinding');
@@ -152,15 +193,15 @@ Bot.prototype.botBrain = function() {
     });
 }
 bot.runGame();
-</code></pre></div>
+</code></pre></div></div>
 
-<h1>How is the Bot Created </h1>
+<h1 class="head-text">How is the Bot Created </h1>
 
-<h2> Global Data</h2>
+<h2 class="head-text"> Global Data</h2>
 <p>The section which is commented under the title "Global Data" includes information that is needed
-for the general well-being of your bot. By this, I mean it includes information that will allow you
+for the general well-being of your bot. By this, I <br>mean it includes information that will allow you
 create meaningful subsets within your code, as well as introduce new variables into your code, based
-upon identifiers already existing in the game. The subset "Global Data" is depicted visually here:</p>
+upon<br> identifiers already existing in the game. The subset "Global Data" is depicted visually here:</p>
 <code><pre> 
   /*                                      *
          * This Code is global data!            *
@@ -194,23 +235,23 @@ upon identifiers already existing in the game. The subset "Global Data" is depic
 </pre></code>
 
 <p> The first part of global data, which introudces the array "enemyBots", allows for constant identification of
-enemies, no matter what bot number you are. This is useful because it allows you to simplify the code you create 
+enemies, no matter what bot number you are.<br> This is useful because it allows you to simplify the code you create 
 later related to attacking certain enemies. </p>
 
 <p> After that, there is code that introduces the variable "closestBot". As the name says, this variable is needed in order 
-to have my bot find the bot that is closest to it. This may be utilised for attacks when you just want to attack someone at
+to have my bot find the bot that is<br> closest to it. This may be utilised for attacks when you just want to attack someone at
 random, when no specific target is needed. </p>
 
 <p> Finally, in this section titled global data, I have the variable "trumpBot". Although the name is slightly silly, it 
-does actually relate to the function of the variable. This variable's intention is to attack the bot which has control of
-most mines, thus the name "trumpBot". This action is carried out by creating an if statement which basically says that
+does actually relate to the function of the variable.<br> This variable's intention is to attack the bot which has control of
+most mines, thus the name "trumpBot". This action is carried out by creating an if statement <br>which basically says that
 if my mine count is lower than the enemies bot count, then the varialbe trumpBot needs to come into play. </p>
 
-<h2> What to Do</h2>
+<h2 class="head-text"> What to Do</h2>
 
 <p> The section titled "What to Do" within the code works to tell the bot in what order certain actions. For my bot, I 
-wanted regenerating health and killing to be the two main objectives. For this reason, I decided to have my "if" statement
-tell the bot to heal, under certain parameters; in my situation, my bot will heal if their health is lower than 30 or (the
+wanted regenerating health and killing to be<br> the two main objectives. For this reason, I decided to have my "if" statement
+tell the bot to heal, under certain parameters; in my situation, my bot will heal if their<br> health is lower than 30 or (the
 two lines stand for Or) if my bot has more than 4 mines and (&&) an enemy is within 7 spaces. </p>
 
 <pre><code>
@@ -236,12 +277,74 @@ two lines stand for Or) if my bot has more than 4 mines and (&&) an enemy is wit
 
 
 <p> After that, the next action I want my bot to complete is an attack of other players. Since I will need my bot to
-complete 3 actions, I will use an else if statement. The parameters which I will have my bot follow for this istance is 
-that they should attack enemy bots if my bot's life is greater than fifty and the number of free mines is less than 1.</p>
+complete 3 actions, I will use an else if statement.<br> The parameters which I will have my bot follow for this istance is 
+that they should attack enemy bots if my bot's life is greater than fifty and the number of free mines<br> is less than 1.</p>
     
 <p> Finally, when every other actioon is complete, I Will have my bot look for free mines. This will allow it to obtain 
-gold, and so my bot will become more wealthy with this action. This set of text is run over and over again until the 
+gold, and so my bot will become more wealthy with<br> this action. This set of text is run over and over again until the 
 is complete. </p>    
+    
+<h2 class="head-text"> How to do it</h2>
+
+<pre><code> 
+
+        /*                                      *
+         * This Code Determines HOW to do it    *
+         *                                      */
+
+        // This Code find the nearest freemine and sets myDir toward that direction //
+        if (task === "freemines") {
+            var closestMine = bot.freeMines[0];
+            for (i = 0; i < bot.freeMines.length; i++) {
+                if (bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, bot.freeMines[i])) {
+                    closestMine = bot.freeMines[i];
+                }
+            }
+            console.log("Olofmeister, Boostmeister");
+            myDir = bot.findPath(myPos, closestMine);
+        }
+        if (task === "kyrSp33dy") {
+            var taverns = bot.taverns[0];
+            for (i = 0; i < bot.taverns.length; i++) {
+                if (bot.findDistance(myPos, taverns) >
+                    bot.findDistance(myPos, bot.taverns[i])) {
+                    taverns = bot.taverns[i];
+                }
+            }
+            console.log("Sippin' on some lean");
+            myDir = bot.findPath(myPos, taverns);
+        }
+
+        if (task === "attacktheplebs") {
+            console.log("Pulverising the Pleberinos");
+            myDir = bot.findPath(myPos, [trumpBot.pos.x, trumpBot.pos.y]);
+        }
+
+</code></pre>
+    <p> This section of code is arguably the most important. As evident by the comment in the code at this very beginning, this
+    section tells the bot how to do what it needs to.<br> The first small part relates to the gathering of free mines. In basic terms, 
+    this code says that if the selected task is "freemines", then the bot should create the variable<br> closest mine which is set to 
+    the array for bot.freeMines. After that, my bot is supposed to run a for loop that says if the distance between my position and 
+    the closest<br> mine is greater than that between my position and the free mines, then it should go searching for free mines. 
+    This is useful in the early stages of the match, when my bot<br> needs to collect mines. </p>
+
+    <p> After that, the next section of text relates to going to the tavern. It begins the same as the freeMines section, although 
+    now the task it is looking for is "kyrSp33dy" and<br> the variable it is introducing is taverns. This if statement is used to tell 
+    my bot exactly which tavern to go to when regenerating health. If my bot was just running about haywire,<br> it would not be good
+    at competing, so this if statemnet is essential. </p>
+
+    <p> Finally, we have the task "attacktheplebs". The sole purpose of this if statement is to get my bot to attack other bots. To
+    this, I have my bot console.log an action that says<br> the bot's direction should be to find a path to the richest player. Although 
+    I could have chosen to have my bot attack the nearest player, I decided that richest player<br> attacks would be far more fruitful. 
+    In general, this is how the code for my bot works and makes my bot perform. </p>
+    
+    <h2 class="head-text"> What did you Learn?</h2>
+    
+    <p> I learned a couple major things. The first thing that really resonates with me is that I was able to improve my skills with 
+    Javascript. This by no means states that I am good<br> at using Javascript, but rather that I better understand how things work. Also, 
+    I learned how to persevere through challenges that I may face. During this process, I had to<br> refine my bot, fix miniscule errors 
+    such as the misspelling of a single word, and try to compete with my classmates. This simply taught me that even when I don't feel 
+    confident,<br> even when I don't feel like the absolute best, it is necessary to just continue doing what you are doing. </p>
     </body>
     
 </html>
